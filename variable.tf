@@ -24,5 +24,10 @@ variable "ami" {
 }
 
 
+variable "region" {
+  
+}
+
+
   
 
