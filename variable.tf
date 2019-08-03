@@ -19,5 +19,10 @@ variable "key_name" {
 }
 
 
+variable "ami" {
+  
+}
+
+
   
 
