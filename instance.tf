@@ -4,7 +4,6 @@ resource "aws_instance" "web1" {
     key_name                    = "${var.key_name}"
     subnet_id                   = "${aws_subnet.public}"
     user_data                   = "${file(userdata.sh)}"
-    count                       = "${var.count}"
     vpc_security_groups_ids     = ["${aws_security_group.public.id}"]
     associate_public_ip_address = "true"
 

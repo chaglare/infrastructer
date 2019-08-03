@@ -19,8 +19,5 @@ variable "key_name" {
 }
 
 
-variable "count" {
-  
-}
   
 
