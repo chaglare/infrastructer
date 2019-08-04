@@ -7,12 +7,12 @@ module "mysql" {
   lc_name = "mysql-lc"
   image_id        = "${var.ami}"
   instance_type   = "${var.instance_type}"
-  security_groups = ["${aws_security_group.privateDB.id}"]
+  security_groups = ["${aws_security_group.private.id}"]
 
  
   # Auto scaling group
   asg_name                  = "mysql-asg"
-  vpc_zone_identifier       = ["${aws_subnet.privateDB.id}"]
+  vpc_zone_identifier       = ["${aws_subnet.private.id}"]
   health_check_type         = "EC2"
   min_size                  = 3
   max_size                  = 6
