@@ -40,8 +40,8 @@ resource "aws_security_group" "public" {
   }  
 }
 
-resource "aws_security_group" "privateDB" {
-  name        = "privateDB"
+resource "aws_security_group" "private" {
+  name        = "private"
   description = "Allow MYSQL traffic"
   vpc_id      = "${aws_vpc.dev.id}"
 
@@ -71,7 +71,7 @@ resource "aws_security_group" "privateDB" {
   }
 
  tags = {
-      Name       = "${var.Name}.privateDB"
+      Name       = "${var.Name}.private"
       Env        = "${var.Env}"
       Created_by = "${var.Created_by}"
       Dept       = "${var.Dept}"
