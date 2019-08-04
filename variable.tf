@@ -8,6 +8,15 @@ variable "ami" {}
 variable "region" {}
 variable "appname" {}
 
+variable "min_app_size" {}
+variable "max_app_size" {}
+variable "desired_app_capacity" {}
+variable "desired_db_capacity" {}
+
+
+
+
+
 
 
   
