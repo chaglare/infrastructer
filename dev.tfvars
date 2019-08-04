@@ -7,3 +7,6 @@ instance_type               = "t2.micro"
 key_name                    = "terraform_april"
 region                      = "us-east-1"
 appname                     = "wordpress"
+min_size                  = 3
+max_size                  = 128
+desired_capacity          = 6
