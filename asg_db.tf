@@ -1,7 +1,7 @@
     
 module "mysql" {
   source  = "terraform-aws-modules/autoscaling/aws"
-  version = "2.6"
+  version = "3.0"
   name = "mysql"
 
 
