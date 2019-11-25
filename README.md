@@ -1,1 +1,1 @@
-# infrastructer
+# infrastructure
